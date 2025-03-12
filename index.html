@@ -54,6 +54,26 @@
         margin: 0 auto 2rem;
         color: rgba(255, 255, 255, 0.9);
         }
+
+        @media (max-width: 768px) { 
+            .hero {
+                padding: 4rem 1.4rem;
+            }
+
+            .hero h1{
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 528px) { 
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+
+            .hero h1{
+                font-size: 1.3rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -177,7 +197,7 @@
                                 </div>
                                 
                                 <div class="process-image">
-                                    <img src="images/data-icon.svg" alt="Datos" class="side-image" style="max-width: 660px; height: auto;">
+                                    <img id="index_images" src="images/data-icon.svg" alt="Datos" class="side-image">
                                 </div>
                             </div>
                         </div>
@@ -225,7 +245,7 @@
                         <div class="info-card glass-effect">
                             <div class="card-content">
                                 <div class="process-image">
-                                    <img src="images/online-process.svg" alt="Proceso en línea" class="side-image" style="max-width: 660px; height: auto;">
+                                    <img id="index_images" src="images/online-process.svg" alt="Proceso en línea" class="side-image">
                                 </div>
                                 <p>El proceso de solicitud de acta de nacimiento en línea es una opción conveniente para los padres que no pueden acudir en persona al Registro Civil. Para ello, se deben seguir los siguientes pasos:</p>
                                 <ol class="process-list">
@@ -255,7 +275,7 @@
                                             <li>Pagar la tarifa correspondiente.</li>
                                         </ul>
                                     </div>
-                                    <img src="images/checklist.svg" alt="Requisitos" class="side-image" style="max-width: 220px; height: 220px;">
+                                    <img src="images/checklist.svg" alt="Requisitos" class="side-image" style="width: 220px; height: 220px;">
                                 </div>
                             </div>
                         </div>
@@ -306,7 +326,7 @@
         </div>
     </div>
 
-    <script src="js/menu.js"></script>
-    <script src="js/cookies.js"></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/cookies.js" defer></script>
 </body>
 </html>
