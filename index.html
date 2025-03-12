@@ -10,6 +10,51 @@
     <link rel="icon" type="image/avif" sizes="32x32" href="images/favicon-32x32.avif">
     <link rel="icon" type="image/avif" sizes="16x16" href="images/favicon-16x16.avif">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.avif">
+    <style>
+        .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        padding: 8rem 2rem;
+        border-radius: 25px;
+        margin-bottom: 3rem;
+        text-align: center;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+        }
+
+        .hero::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+        pointer-events: none;
+        }
+
+        .hero__content {
+        position: relative;
+        z-index: 2;
+        }
+
+        .hero__content h1 {
+        font-size: 3rem;
+        color: var(--light);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
+        margin: 0 auto 1.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        }
+
+        .hero__content p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -210,7 +255,7 @@
                                             <li>Pagar la tarifa correspondiente.</li>
                                         </ul>
                                     </div>
-                                    <img src="images/checklist.svg" alt="Requisitos" class="side-image" style="max-width: 220px; height: auto;">
+                                    <img src="images/checklist.svg" alt="Requisitos" class="side-image" style="max-width: 220px; height: 220px;">
                                 </div>
                             </div>
                         </div>
