@@ -356,6 +356,134 @@
                 font-size: 1.3rem;
             }
         }
+
+        @media (max-width: 820px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(44, 62, 80, 0.95);
+    padding: 1rem;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    padding-left: 1rem;
+  }
+  .main {
+    padding: 0.5rem;
+  }
+
+  .card-with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .with-side-image {
+    grid-template-columns: 1fr;
+  }
+
+  .side-image {
+    margin: 0 auto;
+    max-width: 180px;
+  }
+
+  .info-section {
+    padding: 1rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-contact-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-container {
+      grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+      order: 2;
+  }
+  
+  .main-content {
+      order: 1;
+  }
+  
+  .sticky-nav {
+      position: relative;
+      top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-nav a {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+  }
+  
+  .cta-box {
+      padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-nav {
+      padding: 1rem;
+  }
+}
+
+#index_images {
+    width: 550px; 
+    height: 550px; 
+}
+    @media (max-width: 668px) { 
+        #index_images {
+            width: 400px; 
+            height: 400px; 
+        }
+    }
+    @media (max-width: 568px) { 
+        #index_images {
+            width: 400px; 
+            height: 400px; 
+        }
+    }
+    @media (max-width: 468px) { 
+        #index_images {
+            width: 300px; 
+            height: 300px; 
+        }
+    }
+    @media (max-width: 400px) { 
+        #index_images {
+            width: 250px; 
+            height: 250px; 
+        }
+   }
     </style>
 </head>
 <body>
